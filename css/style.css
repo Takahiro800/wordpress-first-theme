@@ -259,7 +259,7 @@ header #logo {
 }
 /*２カラム時*/
 .c2 #side {
-	display: none;	
+	display: none;
 }
 
 /*sub,side共通設定
@@ -516,7 +516,28 @@ img.fl {float: left;margin-right: 10px;margin-bottom: 10px;}
 .mini1 {font-size: 11px;display: inline-block;line-height: 1.5;}
 .sh {display: none;}
 
+/*個別ページ
+---------------------------------------------------------------------------*/
+.col-12 col-md-9 {margin: 0px;
+	padding: 0px;
+	color: #fff;	/*全体の文字色*/
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-size: 20px;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	background: #000;	/*背景色*/}
 
+.article_title {
+	text-align: center;
+	font-size: 30px;
+}
+
+.article_body {
+	height: 200px;
+}
+
+.article_meta {
+	text-align: right;
+}
 
 /*画面幅800px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/

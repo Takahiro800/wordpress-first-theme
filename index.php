@@ -54,9 +54,9 @@
 					</a>
 				</div>
 		</div>
+	<?php endwhile;?>
 		<dt>2018/11/22</dt>
 		<dd>tp_cool7配布開始。<span class="newicon">NEW</span></dd>
-	<?php endwhile;?>
 	</dl>
 	<p class="r">&raquo;&nbsp;<a href="#">過去ログ</a></p>
 <?php else: ?>
