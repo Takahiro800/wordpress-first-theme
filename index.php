@@ -29,14 +29,16 @@
 <div id="main">
 
 <!--スライドショー-->
-<aside id="mainimg">
-<div class="inner">
-<img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" alt="" class="slide0">
-<img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" alt="" class="slide1">
-<img src="<?php echo get_template_directory_uri(); ?>/images/2.jpg" alt="" class="slide2">
-<img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="" class="slide3">
-</div>
-</aside>
+<?php if (is_home()): ?>
+	<aside id="mainimg">
+	<div class="inner">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" alt="" class="slide0">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" alt="" class="slide1">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/2.jpg" alt="" class="slide2">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="" class="slide3">
+	</div>
+	</aside>
+<?php endif; ?>
 
 <section id="new">
 <h2>更新情報・お知らせ</h2>
