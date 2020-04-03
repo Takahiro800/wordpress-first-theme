@@ -36,4 +36,5 @@
 <p class="tel">TEL:00-0000-0000<span>受付：00:00〜00:00　定休日：水曜日</span></p>
 </div>
 </div>
+<?php wp_header(); ?>
 </header>

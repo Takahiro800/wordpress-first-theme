@@ -69,5 +69,6 @@ if (OCwindowWidth() <= 800) {
 }
 </script>
 
+<?php wp_footer(); ?>
 </body>
 </html>
