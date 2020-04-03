@@ -42,23 +42,27 @@
 
 <section id="new">
 <h2>更新情報・お知らせ</h2>
-<dl>
-<dt>2018/11/22</dt>
-<dd>tp_cool7配布開始。<span class="newicon">NEW</span></dd>
-<dt>20XX/00/00</dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-<dt>20XX/00/00</dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-<dt>20XX/00/00</dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-<dt>20XX/00/00</dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-<dt>20XX/00/00</dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-<dt>20XX/00/00</dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-</dl>
-<p class="r">&raquo;&nbsp;<a href="#">過去ログ</a></p>
+<?php if (have_posts()): ?>
+	<dl>
+	<?php while (have_posts()): the_post(); ?>
+		<div class="col-md-4">
+			<article id="post-<?php the_ID(); ?>" <?php post_class('news'); ?>>
+				<div class="news_meta">
+					<a href="<?php the_permalink();?>" ?>
+						<dt><?php the_time('Y/m/d'); ?></dt>
+						<dd><?php the_title(); ?></dd>
+					</a>
+				</div>
+		</div>
+		<dt>2018/11/22</dt>
+		<dd>tp_cool7配布開始。<span class="newicon">NEW</span></dd>
+	<?php endwhile;?>
+	</dl>
+	<p class="r">&raquo;&nbsp;<a href="#">過去ログ</a></p>
+<?php else: ?>
+	<p><a>まだ投稿記事はありません。</a></p>
+
+<?php endif;?>
 </section>
 
 <section>
