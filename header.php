@@ -18,23 +18,26 @@
 </head>
 
 <body>
+  <?php wp_body_open(); ?>
 
 <header>
-<div class="inner">
-	<h1 id="logo">
-		<a href="<?php echo home_url(); ?>">
-			<?php bloginfo('name');  ?>
-		</a>
-	</h1>
-	<h2 id="description">
-		<p>
-			<?php bloginfo('description'); ?>
-		</p>
-	</h2>
-<div id="contact">
-
-<p class="tel">TEL:00-0000-0000<span>受付：00:00〜00:00　定休日：水曜日</span></p>
-</div>
-</div>
-<?php wp_header(); ?>
+  <div class="inner">
+    <h1 id="logo">
+      <a href="<?php echo home_url(); ?>">
+        <?php bloginfo('name');  ?>
+      </a>
+    </h1>
+    <h2 id="description">
+      <p>
+        <?php bloginfo('description'); ?>
+      </p>
+    </h2>
+    <div id="contact">
+      <p class="tel">TEL:00-0000-0000<span>受付：00:00〜00:00　定休日：水曜日</span></p>
+    </div>
+  </div>
+  <?php
+    wp_head();
+    wp_enqueue_script('jquery');
+  ?>
 </header>
