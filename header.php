@@ -45,3 +45,38 @@
     wp_enqueue_script('jquery');
   ?>
 </header>
+
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+<ul class="inner">
+<li class="current"><a href="<?php echo home_url(); ?>">ホーム<span>HOME</span></a></li>
+<?php
+$progra = get_term_by('slug', 'programming', 'category');
+$progra_link = get_term_link($progra, 'category');
+
+$math = get_term_by( 'slug', 'math', 'category' );
+$math_link = get_term_link($math, 'category');
+?>
+<li><a href="<?php echo $progra_link; ?>">プログラミング<span>programming</span></a></li>
+<li><a href="<?php echo $math_link; ?>">数学<span>Mathmatics</span></a></li>
+<li><a href="recruit.html">採用情報<span>RECRUIT</span></a></li>
+<li><a href="link.html">リンク<span>STAFF</span></a></li>
+<li><a href="contact.html">お問い合わせ<span>CONTACT</span></a></li>
+</ul>
+</nav>
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="<?php echo home_url(); ?>">ホーム<span>HOME</span></a></li>
+<li><a href="company.html">会社概要<span>COMPANY</span></a></li>
+<li><a href="service.html">製品紹介<span>SERVICE</span></a></li>
+<li><a href="recruit.html">採用情報<span>RECRUIT</span></a></li>
+<li><a href="link.html">リンク<span>STAFF</span></a></li>
+<li><a href="contact.html">お問い合わせ<span>CONTACT</span></a></li>
+</ul>
+</nav>
+
+<div id="contents" class="inner">
+<div id="contents-in">
+
+<div id="main">

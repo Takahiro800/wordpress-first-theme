@@ -5,3 +5,4 @@ function my_document_title_separator($separator){
   $separator = '|';
   return $separator;
 }
+add_theme_support( 'menus' );
