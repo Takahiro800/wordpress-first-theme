@@ -10,8 +10,7 @@
 			<a href="service2.html">
 				<figure><?php  ?></figure>
 				<h4><?php the_title(); ?></h4>
-				<p>リンクがあると、ボックス右下に「→」マークが入ります。<br>
-				サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
+				<?php the_content(); ?>
 			</a>
 		<?php endwhile; ?>
 	</div>
