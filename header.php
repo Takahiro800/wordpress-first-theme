@@ -76,8 +76,3 @@
       <li><a href="contact.html">お問い合わせ<span>CONTACT</span></a></li>
     </ul>
   </nav>
-
-  <div id="contents" class="inner">
-    <div id="contents-in">
-
-      <div id="main">

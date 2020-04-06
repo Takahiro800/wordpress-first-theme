@@ -1,3 +1,5 @@
+/*　採用情報ページ */
+
 <?php get_header(); ?>
 
 <?php if (have_posts()) : ?>
@@ -13,7 +15,7 @@
 			</table>
 		<?php endwhile; ?>
 	<?php endif; ?>
-</div>
+	</div>
 	</body>
 
 
@@ -21,7 +23,14 @@
 	<div id="side">
 		<?php get_sidebar('product'); ?>
 		<?php get_sidebar('access'); ?>
+
 	</div>
+
+	<div id="sub">
+		<?php get_sidebar('product'); ?>
+		<?php get_sidebar('access'); ?>
+	</div>
+
 
 
 	<?php get_footer(); ?>
