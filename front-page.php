@@ -84,53 +84,9 @@
 <!--/#contents-in-->
 
 <div id="side">
-
-	<section>
-
-		<h2>製品情報</h2>
-
-		<div class="list">
-			<a href="service2.html">
-				<figure><img src="<?php echo get_template_directory_uri(); ?>/images/sample1.jpg" alt="写真の説明"></figure>
-				<h4>製品タイトル<span class="newicon">NEW</span></h4>
-				<p>サンプルテキスト。サンプルテキスト。</p>
-			</a>
-		</div>
-
-		<div class="list">
-			<a href="service2.html">
-				<figure><img src="<?php echo get_template_directory_uri(); ?>/images/sample1.jpg" alt="写真の説明"></figure>
-				<h4>製品タイトル</h4>
-				<p>サンプルテキスト。サンプルテキスト。</p>
-			</a>
-		</div>
-
-
-		<div class="list">
-			<a href="service2.html">
-				<figure><img src="<?php echo get_template_directory_uri(); ?>/images/sample1.jpg" alt="写真の説明"></figure>
-				<h4>製品タイトル</h4>
-				<p>サンプルテキスト。サンプルテキスト。</p>
-			</a>
-		</div>
-
-		<div class="list">
-			<a href="service2.html">
-				<figure><img src="<?php echo get_template_directory_uri(); ?>/images/sample1.jpg" alt="写真の説明"></figure>
-				<h4>製品タイトル</h4>
-				<p>サンプルテキスト。サンプルテキスト。</p>
-			</a>
-		</div>
-
-		<div class="list">
-			<a href="service2.html">
-				<figure><img src="<?php echo get_template_directory_uri(); ?>/images/sample1.jpg" alt="写真の説明"></figure>
-				<h4>製品タイトル</h4>
-				<p>サンプルテキスト。サンプルテキスト。</p>
-			</a>
-		</div>
-
-	</section>
+	<?php get_sidebar('contents'); ?>
+	<?php get_sidebar('product'); ?>
+	<?php get_sidebar('access'); ?>
 
 	<nav>
 		<h2>Contents</h2>
