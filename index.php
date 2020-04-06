@@ -3,15 +3,12 @@
 	<div id="contents-in">
 
 		<div id="main">
-
-
-
 			<h2><?php wp_title(''); ?></h2>
 
 			<?php if (have_posts()) : ?>
 				<div class="list">
 					<?php while (have_posts()) : the_post(); ?>
-						<a href="service2.html">
+						<a href="<?php the_permalink(); ?>">
 							<figure><?php  ?></figure>
 							<h4><?php the_title(); ?></h4>
 							<?php the_content(); ?>
