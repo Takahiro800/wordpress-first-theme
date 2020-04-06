@@ -2,6 +2,8 @@
 
 <h2 class="Pagetitle">積ん読の本たち<span>〜まだまだ勉強がたりんのや〜</span></h2>
 
+<?php get_template_part('template-parts/breadcrumb'); ?>
+
 <main class="main">
   <div class="container">
     <div class="row">
@@ -11,7 +13,7 @@
   <?php while (have_posts() ) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
       <header class="article_header">
-        <h2 class="article_title"><?php the_title(); ?></h2>
+        <h1 class="article_title"><?php the_title(); ?></h1>
         <div class="artilce_meta">
           <?php the_category(); ?>
           <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time>
