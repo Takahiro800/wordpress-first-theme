@@ -682,4 +682,37 @@ img.fr,img.fl {float: none;margin: 0;width: 100%;}
 
 /*自分で書いたもの
 -----------------------------------------------------------------------------*/
-.article_body {font-size: 25px}
+.article {
+	height: 650px;
+}
+.article_body {
+	margin-top: 10px;
+	font-size: 25px;
+	height: 80%
+}
+.article_body .content {
+	color: white;
+}
+
+.container {
+	width: 60%; float: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.article_title {
+	width: 90%;
+	text-align: cneter;
+	margin-left: auto;
+}
+
+.left-container {
+	width: 15%; float: left;
+}
+
+.right-container {
+	width: 15%; float: right;
+}
+
+.article_header {
+	height: 120px;
+}
