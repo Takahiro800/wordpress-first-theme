@@ -88,53 +88,7 @@ TEL：03-0000-0000<br>
 </div>
 <!--/#contents-in-->
 
-<div id="side">
-
-<section>
-
-<h2>製品情報</h2>
-
-<div class="list">
-<a href="service2.html">
-<figure><img src="images/sample1.jpg" alt="写真の説明"></figure>
-<h4>製品タイトル<span class="newicon">NEW</span></h4>
-<p>サンプルテキスト。サンプルテキスト。</p>
-</a>
-</div>
-
-<div class="list">
-<a href="service2.html">
-<figure><img src="images/sample1.jpg" alt="写真の説明"></figure>
-<h4>製品タイトル</h4>
-<p>サンプルテキスト。サンプルテキスト。</p>
-</a>
-</div>
-
-<div class="list">
-<a href="service2.html">
-<figure><img src="images/sample1.jpg" alt="写真の説明"></figure>
-<h4>製品タイトル</h4>
-<p>サンプルテキスト。サンプルテキスト。</p>
-</a>
-</div>
-
-<div class="list">
-<a href="service2.html">
-<figure><img src="images/sample1.jpg" alt="写真の説明"></figure>
-<h4>製品タイトル</h4>
-<p>サンプルテキスト。サンプルテキスト。</p>
-</a>
-</div>
-
-<div class="list">
-<a href="service2.html">
-<figure><img src="images/sample1.jpg" alt="写真の説明"></figure>
-<h4>製品タイトル</h4>
-<p>サンプルテキスト。サンプルテキスト。</p>
-</a>
-</div>
-
-</section>
+<?php get_sidebar('product'); ?>
 
 <nav>
 <h2>Contents</h2>

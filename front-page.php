@@ -71,64 +71,11 @@
 
 <div id="sub">
 
-<nav>
-<h2>Contents</h2>
-<ul class="submenu">
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-</ul>
-</nav>
+<?php get_sidebar('contents'); ?>
 
-<nav>
-<ul class="submenu">
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-</ul>
-</nav>
+<?php get_sidebar('product'); ?>
 
-<section>
-
-<h2>製品情報</h2>
-
-<div class="list">
-<a href="service2.html">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/images/sample1.jpg" alt="写真の説明"></figure>
-<h4>製品タイトル<span class="newicon">NEW</span></h4>
-<p>サンプルテキスト。サンプルテキスト。</p>
-</a>
-</div>
-
-<div class="list">
-<a href="service2.html">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/images/sample1.jpg" alt="写真の説明"></figure>
-<h4>製品タイトル</h4>
-<p>サンプルテキスト。サンプルテキスト。</p>
-</a>
-</div>
-
-<div class="list">
-<a href="service2.html">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/images/sample1.jpg" alt="写真の説明"></figure>
-<h4>製品タイトル</h4>
-<p>サンプルテキスト。サンプルテキスト。</p>
-</a>
-</div>
-
-</section>
-
-<div class="box1">
-<h2>アクセス</h2>
-<p>東京都XX区XXXXビル３F<br>
-TEL：03-0000-0000<br>
-受付：9:00～16:00<br>
-定休日：土日祝</p>
-</div>
+<?php get_sidebar('access'); ?>
 
 </div>
 <!--/#sub-->
