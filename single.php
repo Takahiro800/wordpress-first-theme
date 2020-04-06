@@ -11,6 +11,7 @@
 
   <div class="right-container">
     <?php get_sidebar('contents'); ?>
+    <?php get_sidebar('archives'); ?>
   </div>
 
   <div class="container">
