@@ -6,12 +6,10 @@
 <h2><?php the_title(); ?></h2>
 <table class="ta1">
 	<caption>正社員募集</caption>
-	<?php for ($count = 0; $count < 6; $count++){ ?>
 	<tr>
-	<th>見出し</th>
 	<td><a href="#"><?php the_content(); ?></a></td>
 	</tr>
-<?php } ?>
+
 </table>
 	<?php endwhile; ?>
 	<?php endif; ?>

@@ -424,13 +424,13 @@ footer .pr {display: block;font-size: 80%;}
 	width: 100%;
 	margin: 0 auto 20px;
 }
-.ta1, .ta1 td, .ta1 th {
+.ta1, .ta1 td, .ta1 th, .wp-block-table, .wp-block-table td, .wp-block-table th {
 	border: 1px solid #666;	/*テーブルの枠線の幅、線種、色*/
 	padding: 10px 15px;	/*ボックス内の余白*/
 	word-break: break-all;
 }
 /*ta1の左側ボックス*/
-.ta1 th {
+.ta1 th, .wp-block-table th{
 	width: 140px;	/*幅*/
 	text-align: center;	/*センタリング*/
 	font-weight: normal;
