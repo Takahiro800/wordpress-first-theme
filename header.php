@@ -62,7 +62,7 @@
       <li><a href="<?php echo $math_link; ?>">数学<span>Mathmatics</span></a></li>
       <li><a href="<?php echo home_url('/recruit/'); ?>">採用情報<span>RECRUIT</span></a></li>
       <li><a href="<?php echo home_url('/link/'); ?>">リンク<span>STAFF</span></a></li>
-      <li><a href="contact.html">お問い合わせ<span>CONTACT</span></a></li>
+      <li><a href="<?php echo home_url('/contact/'); ?>">お問い合わせ<span>CONTACT</span></a></li>
     </ul>
   </nav>
   <!--小さな端末用（800px以下端末）メニュー-->

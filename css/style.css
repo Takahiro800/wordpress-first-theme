@@ -51,9 +51,10 @@ header {
 }
 /*ロゴ画像*/
 header #logo {
-	width: 250px;	/*ロゴ画像の幅*/
+	width: 70%;	/*ロゴ画像の幅*/
 	float: left;	/*左に回り込み*/
 	margin-top: 34px;	/*ロゴの上にあける余白。上下のバランスをここで調整して下さい。*/
+	text-align: center;
 }
 
 /*ヘッダー右側の電話番号ブロック
@@ -715,4 +716,9 @@ img.fr,img.fl {float: none;margin: 0;width: 100%;}
 
 .article_header {
 	height: 120px;
+}
+
+header h1 a {
+	font-size: 35px;
+	width: 80%
 }
