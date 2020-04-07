@@ -1,40 +1,32 @@
 <?php get_header(); ?>
+
 <div id="contents" class="inner">
 	<div id="contents-in">
 
 		<div id="main">
-			<h2><?php wp_title(''); ?></h2>
 
 			<?php if (have_posts()) : ?>
-				<div class="list">
-					<?php while (have_posts()) : the_post(); ?>
-						<a href="<?php the_permalink(); ?>">
-							<figure><?php  ?></figure>
-							<h4><?php the_title(); ?></h4>
-							<?php the_content(); ?>
-						</a>
-					<?php endwhile; ?>
-				</div>
-			<?php endif; ?>
+				<?php while (have_posts()) : the_post(); ?>
 
-			</section>
+					<section>
+
+						<h2><?php the_title(); ?></h2>
+						<p>リンクのご案内。</p>
+
+						<table class="ta1">
+							<a href="#" ＞<?php the_content(); ?></a> </table> </section> <? endwhile; ?> <? else : ?> <section>
+
+								<h2>リンク</h2>
+								<p>リンクのご案内。</p>
+					</section>
+				<? endif; ?>
 
 		</div>
 		<!--/#main-->
 
 		<div id="sub">
 
-			<nav>
-				<h2>Contents</h2>
-				<ul class="submenu">
-					<li><a href="#">メニューサンプル</a></li>
-					<li><a href="#">メニューサンプル</a></li>
-					<li><a href="#">メニューサンプル</a></li>
-					<li><a href="#">メニューサンプル</a></li>
-					<li><a href="#">メニューサンプル</a></li>
-				</ul>
-			</nav>
-
+			<?php get_sidebar('contents'); ?>
 			<nav>
 				<ul class="submenu">
 					<li><a href="#">メニューサンプル</a></li>
@@ -45,43 +37,9 @@
 				</ul>
 			</nav>
 
-			<section>
+			<?php get_sidebar('product'); ?>
 
-				<h2>製品情報</h2>
-
-				<div class="list">
-					<a href="service2.html">
-						<figure><img src="images/sample1.jpg" alt="写真の説明"></figure>
-						<h4>製品タイトル<span class="newicon">NEW</span></h4>
-						<p>サンプルテキスト。サンプルテキスト。</p>
-					</a>
-				</div>
-
-				<div class="list">
-					<a href="service2.html">
-						<figure><img src="images/sample1.jpg" alt="写真の説明"></figure>
-						<h4>製品タイトル</h4>
-						<p>サンプルテキスト。サンプルテキスト。</p>
-					</a>
-				</div>
-
-				<div class="list">
-					<a href="service2.html">
-						<figure><img src="images/sample1.jpg" alt="写真の説明"></figure>
-						<h4>製品タイトル</h4>
-						<p>サンプルテキスト。サンプルテキスト。</p>
-					</a>
-				</div>
-
-			</section>
-
-			<div class="box1">
-				<h2>アクセス</h2>
-				<p>東京都XX区XXXXビル３F<br>
-					TEL：03-0000-0000<br>
-					受付：9:00～16:00<br>
-					定休日：土日祝</p>
-			</div>
+			<?php get_sidebar('access'); ?>
 
 		</div>
 		<!--/#sub-->
@@ -89,28 +47,74 @@
 	</div>
 	<!--/#contents-in-->
 
-	<?php get_sidebar('product'); ?>
+	<div id="side">
 
-	<nav>
-		<h2>Contents</h2>
-		<ul class="submenu">
-			<li><a href="#">メニューサンプル</a></li>
-			<li><a href="#">メニューサンプル</a></li>
-			<li><a href="#">メニューサンプル</a></li>
-			<li><a href="#">メニューサンプル</a></li>
-			<li><a href="#">メニューサンプル</a></li>
-		</ul>
-	</nav>
+		<section>
 
-	<p>
-		<a href="recruit.html"><img src="images/banner1.jpg" alt="採用情報" class="pc"></a>
-		<a href="recruit.html"><img src="images/banner1_sh.jpg" alt="採用情報" class="sh"></a>
-	</p>
-	<p>上のバナー画像は、801px以上の端末と800px以下とで画像２種類が切り替わります。<br>
-		<a href="company.html#banner">詳しい説明はこちら。</a></p>
+			<h2>製品情報</h2>
 
-</div>
-<!--/#side-->
+			<div class="list">
+				<a href="service2.html">
+					<figure><img src="images/sample1.jpg" alt="写真の説明"></figure>
+					<h4>製品タイトル<span class="newicon">NEW</span></h4>
+					<p>サンプルテキスト。サンプルテキスト。</p>
+				</a>
+			</div>
+
+			<div class="list">
+				<a href="service2.html">
+					<figure><img src="images/sample1.jpg" alt="写真の説明"></figure>
+					<h4>製品タイトル</h4>
+					<p>サンプルテキスト。サンプルテキスト。</p>
+				</a>
+			</div>
+
+			<div class="list">
+				<a href="service2.html">
+					<figure><img src="images/sample1.jpg" alt="写真の説明"></figure>
+					<h4>製品タイトル</h4>
+					<p>サンプルテキスト。サンプルテキスト。</p>
+				</a>
+			</div>
+
+			<div class="list">
+				<a href="service2.html">
+					<figure><img src="images/sample1.jpg" alt="写真の説明"></figure>
+					<h4>製品タイトル</h4>
+					<p>サンプルテキスト。サンプルテキスト。</p>
+				</a>
+			</div>
+
+			<div class="list">
+				<a href="service2.html">
+					<figure><img src="images/sample1.jpg" alt="写真の説明"></figure>
+					<h4>製品タイトル</h4>
+					<p>サンプルテキスト。サンプルテキスト。</p>
+				</a>
+			</div>
+
+		</section>
+
+		<nav>
+			<h2>Contents</h2>
+			<ul class="submenu">
+				<li><a href="#">メニューサンプル</a></li>
+				<li><a href="#">メニューサンプル</a></li>
+				<li><a href="#">メニューサンプル</a></li>
+				<li><a href="#">メニューサンプル</a></li>
+				<li><a href="#">メニューサンプル</a></li>
+			</ul>
+		</nav>
+
+		<p>
+			<a href="recruit.html"><img src="images/banner1.jpg" alt="採用情報" class="pc"></a>
+			<a href="recruit.html"><img src="images/banner1_sh.jpg" alt="採用情報" class="sh"></a>
+		</p>
+		<p>上のバナー画像は、801px以上の端末と800px以下とで画像２種類が切り替わります。<br>
+			<a href="company.html#banner">詳しい説明はこちら。</a></p>
+
+	</div>
+	<!--/#side-->
 
 </div>
 <!--/#contents-->

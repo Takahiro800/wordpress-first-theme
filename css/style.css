@@ -51,9 +51,10 @@ header {
 }
 /*ロゴ画像*/
 header #logo {
-	width: 250px;	/*ロゴ画像の幅*/
+	width: 70%;	/*ロゴ画像の幅*/
 	float: left;	/*左に回り込み*/
 	margin-top: 34px;	/*ロゴの上にあける余白。上下のバランスをここで調整して下さい。*/
+	text-align: center;
 }
 
 /*ヘッダー右側の電話番号ブロック
@@ -259,7 +260,7 @@ header #logo {
 }
 /*２カラム時*/
 .c2 #side {
-	display: none;	
+	display: none;
 }
 
 /*sub,side共通設定
@@ -424,13 +425,13 @@ footer .pr {display: block;font-size: 80%;}
 	width: 100%;
 	margin: 0 auto 20px;
 }
-.ta1, .ta1 td, .ta1 th {
+.ta1, .ta1 td, .ta1 th, .wp-block-table, .wp-block-table td, .wp-block-table th {
 	border: 1px solid #666;	/*テーブルの枠線の幅、線種、色*/
 	padding: 10px 15px;	/*ボックス内の余白*/
 	word-break: break-all;
 }
 /*ta1の左側ボックス*/
-.ta1 th {
+.ta1 th, .wp-block-table th{
 	width: 140px;	/*幅*/
 	text-align: center;	/*センタリング*/
 	font-weight: normal;
@@ -516,7 +517,28 @@ img.fl {float: left;margin-right: 10px;margin-bottom: 10px;}
 .mini1 {font-size: 11px;display: inline-block;line-height: 1.5;}
 .sh {display: none;}
 
+/*個別ページ
+---------------------------------------------------------------------------*/
+.col-12 col-md-9 {margin: 0px;
+	padding: 0px;
+	color: #fff;	/*全体の文字色*/
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-size: 20px;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	background: #000;	/*背景色*/}
 
+.article_title {
+	text-align: center;
+	font-size: 30px;
+}
+
+.article_body {
+	height: 200px;
+}
+
+.article_meta {
+	text-align: right;
+}
 
 /*画面幅800px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -657,4 +679,67 @@ body {
 .ws,.wl {width: 94%;}
 img.fr,img.fl {float: none;margin: 0;width: 100%;}
 
+}
+
+/*自分で書いたもの
+-----------------------------------------------------------------------------*/
+.article {
+	height: 650px;
+}
+.article_body {
+	margin-top: 10px;
+	font-size: 25px;
+	height: 80%
+}
+.article_body .content {
+	color: white;
+}
+
+.container {
+	width: 60%; float: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.article_title {
+	width: 90%;
+	text-align: cneter;
+	margin-left: auto;
+}
+
+.left-container {
+	width: 15%; float: left;
+}
+
+.right-container {
+	width: 15%; float: right;
+}
+
+.article_header {
+	height: 120px;
+}
+
+header h1 a {
+	font-size: 35px;
+	width: 80%
+}
+.fix-main {
+	width: 80%;
+	float: right;
+}
+.fixpage-main {
+	float: left;
+	width: 70%;
+	margin-right: 2%
+}
+.left {
+	float: left;	/*左に回り込み*/
+	width: 20%;	/*ブロックの幅*/
+}
+.right {
+	float: right;	/*右に回り込み*/
+	width: 25%;		/*ブロックの幅*/
+}
+
+.right .list figure img, .left .list figure img {
+	width: 20%;		/*写真の幅*/
 }
