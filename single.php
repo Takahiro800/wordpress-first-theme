@@ -35,6 +35,8 @@
               </div>
             </div>
 
+            <?php comments_template(); ?>
+
             <div claaa="postLinks">
               <div class="postLink postLink-prev"><?php previous_post_link(); ?></div>
               <div class="postLink postLink-next"><?php next_post_link(); ?></div>
