@@ -722,3 +722,24 @@ header h1 a {
 	font-size: 35px;
 	width: 80%
 }
+.fix-main {
+	width: 80%;
+	float: right;
+}
+.fixpage-main {
+	float: left;
+	width: 70%;
+	margin-right: 2%
+}
+.left {
+	float: left;	/*左に回り込み*/
+	width: 20%;	/*ブロックの幅*/
+}
+.right {
+	float: right;	/*右に回り込み*/
+	width: 25%;		/*ブロックの幅*/
+}
+
+.right .list figure img, .left .list figure img {
+	width: 20%;		/*写真の幅*/
+}
